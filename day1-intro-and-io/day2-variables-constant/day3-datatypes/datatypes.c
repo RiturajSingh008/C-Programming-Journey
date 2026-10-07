@@ -7,7 +7,7 @@ int main() {
     char grade = 'A';
     double fee = 55000.50;
 
-    printf("=== Day 3: Basic Data Types ===\n\n");
+    printf(" Day 3: Basic Data Types \n\n");
 
     // 2. Printing values using their format specifiers
     printf("Age: %d\n", age);

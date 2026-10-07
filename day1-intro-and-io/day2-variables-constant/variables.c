@@ -1,36 +1,24 @@
 #include <stdio.h>
 
-// Preprocessor constant macro
-#define COLLEGE_CODE 5001
+// Defining a constant using #define
+#define PI 3.14
 
-// Constant variable for mathematical precision
-const float PI = 3.14159f;
+int main() {
+    // 1. Variable declaration and initialization
+    int radius = 5;
+    float area;
 
-/* Function to calculate and display circle properties */
-void calculateCircleMetrics(float radius) {
-    float area = PI * radius * radius;
-    float circumference = 2.0f * PI * radius;
+    // 2. Constant using the 'const' keyword
+    const int collegeCode = 101;
 
-    printf("\n--- Circle Calculations ---\n");
-    printf("Radius:        %.2f units\n", radius);
-    printf("Circumference: %.2f units\n", circumference);
-    printf("Area:          %.2f sq units\n", area);
-}
+    // 3. Calculation
+    area = PI* radius * radius;
 
-int main(void) {
-    // Basic variable declarations
-    int studentId = 101;
-    float radius = 7.0f; // Using 7 makes mental verification simple (Area ≈ 153.94)
+    // 4. Output
+    printf("=== Day 2: Variables and Constants ===\n\n");
+    printf("College Code: %d\n", collegeCode);
+    printf("Radius: %d\n", radius);
+    printf("Area of Circle: %.2f\n", area);
 
-    printf("========================================\n");
-    printf("   Day 2: Variables & Constants Lab     \n");
-    printf("========================================\n");
-    printf("Institution Code (Macro): %d\n", COLLEGE_CODE);
-    printf("Student ID:               %d\n", studentId);
-
-    // Call computation function
-    calculateCircleMetrics(radius);
-
-    printf("========================================\n");
-    return 0;
+     return 0;
 }
